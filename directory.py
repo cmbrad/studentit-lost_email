@@ -30,4 +30,7 @@ def get_from_directory(name):
 
         students.append(student)
 
-    return students 
+    return students
+
+if __name__ == "__main__":
+	print(get_from_directory("Christopher Bradley"))
