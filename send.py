@@ -116,7 +116,7 @@ msg['From'] = me
 msg['To'] = you
 msg['Reply-To'] = reply_to
 
-sys.exit()
+print("Sending email...")
 
 # Send the message via our own SMTP server, but don't include the
 # envelope header.
@@ -127,3 +127,5 @@ s.ehlo()
 s.login(USERNAME, PASSWORD)
 s.sendmail(me, [you], msg.as_string())
 s.quit()
+
+print("Sent.")
